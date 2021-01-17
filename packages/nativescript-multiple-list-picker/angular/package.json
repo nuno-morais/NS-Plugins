@@ -1,0 +1,16 @@
+{
+	"name": "nativescript-nativescript-multiple-list-picker-angular",
+	"ngPackage": {
+		"lib": {
+			"entryFile": "index.ts",
+			"umdModuleIds": {
+				"@nativescript/core": "ns-core",
+				"@nativescript/angular": "ns-angular",
+				"@nuno-morais/nativescript-multiple-list-picker": "ns-nativescript-multiple-list-picker"
+			}
+		},
+		"whitelistedNonPeerDependencies": [
+			"."
+		]
+	}
+}
