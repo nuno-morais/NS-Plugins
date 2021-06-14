@@ -6,6 +6,8 @@
     <ScrollView class="h-full">
       <StackLayout>
         <Button text="nativescript-multiple-list-picker" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+        <Button text="nativescript-twilio" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
+        <Button text="zip" tap="{{ viewDemo }}" class="btn btn-primary view-demo"/>
       </StackLayout>
     </ScrollView>
   </StackLayout>

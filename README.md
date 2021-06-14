@@ -1,4 +1,6 @@
 - @nuno-morais/nativescript-multiple-list-picker
+- @nuno-morais/nativescript-twilio
+- @nuno-morais/zip
 
 # How to use?
 

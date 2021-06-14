@@ -71,6 +71,13 @@ module.exports = {
 				},
 			},
 
+			// @nuno-morais/nativescript-twilio
+			'nativescript-twilio': {
+				build: {
+					script: 'nx run nativescript-twilio:build.all',
+					description: '@nuno-morais/nativescript-twilio: Build',
+				},
+			},
 			'build-all': {
 				script: 'nx run all:build',
 				description: 'Build all packages',
@@ -84,6 +91,10 @@ module.exports = {
 			'nativescript-multiple-list-picker': {
 				script: 'nx run nativescript-multiple-list-picker:focus',
 				description: 'Focus on @nuno-morais/nativescript-multiple-list-picker',
+			},
+			'nativescript-twilio': {
+				script: 'nx run nativescript-twilio:focus',
+				description: 'Focus on @nuno-morais/nativescript-twilio',
 			},
 			reset: {
 				script: 'nx run all:focus',

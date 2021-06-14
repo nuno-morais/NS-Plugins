@@ -25,6 +25,9 @@
 		},
 		"nativescript-multiple-list-picker": {
 			"tags": []
+		},
+		"nativescript-twilio": {
+			"tags": []
 		}
 	},
 	"workspaceLayout": {

@@ -1,0 +1,16 @@
+{
+	"name": "nativescript-nativescript-twilio",
+	"ngPackage": {
+		"lib": {
+			"entryFile": "index.ts",
+			"umdModuleIds": {
+				"@nativescript/core": "ns-core",
+				"@nativescript/angular": "ns-angular",
+				"@nuno-morais/nativescript-twilio": "ns-nativescript-twilio"
+			}
+		},
+		"whitelistedNonPeerDependencies": [
+			"."
+		]
+	}
+}

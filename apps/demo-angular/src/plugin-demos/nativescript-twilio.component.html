@@ -1,0 +1,19 @@
+<ActionBar title="nativescript-twilio" class="action-bar"> </ActionBar>
+
+<GridLayout rows="*,*,auto,auto">
+	<TwilioVideoView #localVideoView row="0" id="local-video"></TwilioVideoView>
+	<TwilioVideoView #remoteVideoView row="1" id="remote-video"></TwilioVideoView>
+
+	<GridLayout columns="*,*,*" row="2" orientation="horizontal">
+		<Button col="0" text="Connect" (tap)="connect()" class="btn-x btn btn-primary"></Button>
+		<Button col="1" text="Disconnect" (tap)="disconnect()" class="btn-x btn btn-primary"></Button>
+		<Button col="2" text="Switch Camera" (tap)="switchCamera()" class="btn-x btn btn-primary"></Button>
+	</GridLayout>
+
+	<GridLayout columns="*,*,*,*" row="3" orientation="horizontal">
+		<Button col="0" text="Mute" (tap)="mute()" class="btn-x btn btn-primary"></Button>
+		<Button col="1" text="Unmute" (tap)="unmute()" class="btn-x btn btn-primary"></Button>
+		<Button col="2" text="Disable Cam" (tap)="disableCamera()" class="btn-x btn btn-primary"></Button>
+		<Button col="3" text="Enable Cam" (tap)="enableCamera()" class="btn-x btn btn-primary"></Button>
+	</GridLayout>
+</GridLayout>

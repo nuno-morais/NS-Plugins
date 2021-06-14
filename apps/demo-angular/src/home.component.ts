@@ -9,5 +9,11 @@ export class HomeComponent {
 		{
 			name: 'nativescript-multiple-list-picker',
 		},
+		{
+			name: 'nativescript-twilio',
+		},
+		{
+			name: 'zip',
+		},
 	];
 }

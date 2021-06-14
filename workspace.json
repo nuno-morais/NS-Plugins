@@ -73,7 +73,7 @@
 					"builder": "@nrwl/workspace:run-commands",
 					"outputs": ["dist/packages"],
 					"options": {
-						"commands": ["nx run nativescript-multiple-list-picker:build.all"],
+						"commands": ["nx run nativescript-multiple-list-picker:build.all", "nx run nativescript-twilio:build.all"],
 						"parallel": false
 					}
 				},
@@ -125,6 +125,49 @@
 					"outputs": ["dist/packages"],
 					"options": {
 						"commands": ["nx g @nativescript/plugin-tools:focus-packages nativescript-multiple-list-picker"],
+						"parallel": false
+					}
+				}
+			}
+		},
+		"nativescript-twilio": {
+			"root": "packages/nativescript-twilio",
+			"sourceRoot": "packages/nativescript-twilio",
+			"projectType": "library",
+			"schematics": {},
+			"architect": {
+				"build": {
+					"builder": "@nrwl/node:package",
+					"options": {
+						"outputPath": "dist/packages/nativescript-twilio",
+						"tsConfig": "packages/nativescript-twilio/tsconfig.json",
+						"packageJson": "packages/nativescript-twilio/package.json",
+						"main": "packages/nativescript-twilio/index.ts",
+						"assets": [
+							"packages/nativescript-twilio/*.md",
+							"packages/nativescript-twilio/index.d.ts",
+							"LICENSE",
+							{
+								"glob": "**/*",
+								"input": "packages/nativescript-twilio/platforms/",
+								"output": "./platforms/"
+							}
+						]
+					}
+				},
+				"build.all": {
+					"builder": "@nrwl/workspace:run-commands",
+					"outputs": ["dist/packages"],
+					"options": {
+						"commands": ["nx run nativescript-twilio:build", "node tools/scripts/build-finish.ts nativescript-twilio"],
+						"parallel": false
+					}
+				},
+				"focus": {
+					"builder": "@nrwl/workspace:run-commands",
+					"outputs": ["dist/packages"],
+					"options": {
+						"commands": ["nx g @nativescript/plugin-tools:focus-packages nativescript-twilio"],
 						"parallel": false
 					}
 				}

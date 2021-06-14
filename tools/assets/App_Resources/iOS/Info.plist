@@ -22,6 +22,10 @@
     <string>1.0</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
+    <key>NSCameraUsageDescription</key>
+    <string>Por sua decisão poderá permitir a camera.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Por sua decisão poderá permitir o microfone.</string>
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
     <key>UIRequiresFullScreen</key>
